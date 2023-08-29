@@ -1,0 +1,1037 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'DM Sans';
+    
+}
+button{
+    cursor: pointer;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #1F2937;
+}
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    color:#FFF;
+}
+.container{
+    width:1200px;
+    margin: 0 auto;
+}
+.p-filler{
+    color: #4B5563;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* форма регистрации\логина */
+.signUp-wrapper{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(255,255, 255,0.8);
+    z-index: 10;
+}
+.signUp-menu{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    top: 100px;
+    margin: 0 auto;
+    background-color: #00353B;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.cross{
+    background-image: url(./imgs/icons/cross.png);
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: -50px;
+    top: -50px;
+    cursor: pointer;
+}   
+.toggle-buttons{
+    width: 100%;
+    display: flex;
+    
+}
+.signUp-button, .login-button{
+    width: 50%;
+    height: 40px;
+}
+.p-menu{
+    margin: 30px 0;
+    font-size: 28px;
+}
+
+.signUp-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.signUp-input{
+    height: 30px;
+    margin: 5px 0;
+    background: none;
+    border: 2px solid #fff;
+    padding-left: 5px;
+    color: white;
+    
+}
+.signUp-input:focus{
+    border-radius: 0;
+    border: 2px solid #fff;
+}
+.signUp-input::-webkit-input-placeholder {color:#aaa;}
+.signUp-input::-moz-placeholder          {color:#aaa;}
+.signUp-input:-moz-placeholder           {color:#aaa;}
+.signUp-input:-ms-input-placeholder      {color:#aaa;}
+
+.end-btn{
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    background-color: #22A45A;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.enabled{
+    background-color: #22A45A;
+    border: none;
+    color: white;
+}
+
+
+/* шапка */
+
+.burger-menu-icon{
+    position: absolute;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #00353B;
+    height: 140vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+.nav-link{
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+.empty{
+    width: 200px;
+    font-family: 'Racing Sans One', cursive;
+    color: #fff;
+    font-size: 20px;
+}
+.white-button{
+    font-family: 'DM Sans';
+    background-color: #FFF;
+    color: #000;
+    padding: 13px 25px;
+    border-radius: 8px;
+    border: none;
+}
+.nav-link:hover{
+    color: #22A45A;
+    transition: color 0.3s;
+    
+}
+.just-link:hover{
+    color: #22A45A;
+    transition: color 0.3s;
+}
+path{
+    transition: fill 0.3s;
+}
+.white-button:hover{
+    background-color: #22A45A;
+    transition: background-color 0.5s;
+}
+.interactive{
+    display: flex;
+    align-items: center;
+    justify-items: end;
+}
+.search-svg{
+    margin-right: 5px;
+}
+.search{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.cart-svg{
+    margin-right: 5px;
+}
+.cart{
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* первая секция */
+
+.wrapper{
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.text-part{
+    color: #FFF;
+    width: 45%;
+}
+h2{
+    font-family: 'poppins';
+}
+.slogan{
+    font-weight: 400;
+    font-size: 50px;
+
+}
+.text-part p{
+    margin: 30px 0;
+    width: 100%;
+}
+
+.img-part{
+   
+    width: 45%;
+    position: relative;
+
+}
+.full-block{
+    width: 100%;
+    
+}
+.img-part::before{
+    content: url(/imgs/bowls.png);
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    left: -100px;
+    top: 250px;
+}
+.green-button{
+    background-color: #22A45A;
+    padding: 13px 25px;
+    border-radius: 8px;
+}
+.just-link{
+    margin-left: 16px;
+}
+
+.strange-img-block{
+    margin-top: 50px;
+}
+
+.rating{
+    margin-left: 20px;
+}
+.rating p { 
+    margin: 0;
+}
+.subtitler{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 40px;
+    color: #fff;
+}
+
+/* about us block */
+.aboutUs{
+    margin-top: -200px;
+}
+
+.aboutUs-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:#FCD8CA ;
+    color: #1F2937;
+    border-radius: 24px;
+    height: 400px;
+    justify-content: center;
+
+}
+.text-wrapper{
+    width: 700px;
+}
+.aboutUs-subtitle{
+    font-weight: 400;
+    font-size: 45px;
+    font-family: 'Poppins';
+}
+.filler{
+    font-size: 18px;
+    margin: 30px 0 55px;
+    line-height: 150%;
+}
+.dark-button{
+    background-color: #1F2937;
+    color: #fff;
+    padding: 13px 25px;
+    border-radius: 8px;
+}
+
+/* блоки контента? */
+.filler-blocks{
+    margin-top: 150px;
+}
+.block-wrapper{
+    justify-content: space-between;
+    width: 100%;
+}
+.block-img{
+    width: 45%;
+}
+.group-img{
+    width: 100%;
+}
+.text-block{
+    width: 45%;
+}
+.h3-filler{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 120%;
+    
+}
+.trans{
+    position: relative;
+    color: #111827;
+    margin-left: 20px;
+    font-weight: 400;
+    
+}
+.trans::after{
+    content: url(/imgs/mini-arrow.png);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -20px;
+    top: 2.5px;
+    
+}
+.marginer{
+    margin: 30px 0 40px;
+}
+/* блок карточек */
+
+.courses{
+    margin-top: 130px;
+}
+
+.block-cards{
+    justify-content: space-between;
+}
+
+.card{
+    height: 400px;
+    width: 27.5%;
+    background-color: #00353B;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius:16px 16px 0 16px;
+    position: relative;
+}
+
+.card::after{
+    height: 220px;
+    width: 170px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.right-element::after{
+    content: ' ';
+    background-image: url(/imgs/corner3.png);
+}
+.middle-element::after{
+    content: ' ';
+    background-image: url(/imgs/corner2.png);
+}
+.left-element::after{
+    content: ' ';
+    background-image: url(/imgs/corner1.png);
+}
+.mini-button{
+    background-color: #FFF;
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #fff;
+    margin: 20px 0 15px;
+}
+.cost{
+    color: white;
+
+}
+.margin-box{
+    margin: 30px 0 60px;
+    width: 730px;
+    text-align: center;
+}
+
+/* блок-вставка */
+.pink-block{
+    margin-top: 160px;
+    width: 100%;
+    height: 500px;
+}
+
+.pink-container{
+    background-color: #FCD8CA;
+    justify-content: space-between;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    height: 100%;
+}
+
+.img-block{
+    height: 100%;
+    width: 50%;
+    background-image: url(/imgs/coding-guys.png);
+    background-size: cover;
+}
+.text-block{
+    
+    margin: 60px 0 60px 60px;
+    width: 470px;
+}
+
+/* блок-преимущества */
+
+.benefits{
+    margin-top: 150px;
+    
+}
+.benefits-main-block{
+    height: 550px;
+    width: 100%;
+}
+
+.side-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.benefits-block-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 240px;
+    margin-top: 50px;
+}
+.benefits-img-block{
+    height: 100%;
+}
+.coding-girl{
+    height: 100%;
+     
+}
+.black-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    margin: 25px 0 15px;
+}
+.marginer30-0-80{
+    margin: 20px 0 50px;
+}
+
+
+
+/* блок отзывов */
+
+.testimonials{
+    margin-top: 130px;
+    margin-bottom: -325px;
+    z-index: 99;
+    display: flex;
+    
+}
+
+.test-wrapper{
+    
+    background-color: #FCD8CA;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    z-index: 50;
+}
+.carousel-wrapper{
+    width: 1100px;
+    margin-top: 90px;
+
+    overflow: hidden;
+}
+.reviews{
+    position: relative;
+    width: 100000px;
+    display: flex;
+    transition: transform 1s;
+}
+
+
+.review-card{
+    margin: 0 10px;
+    background-color: #FFF;
+    padding: 30px;
+    width: 285px;
+    height: 260px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.review-text{
+    font-size: 17px;
+}
+
+.black-star{
+    margin-right: 5px;
+}
+.marginer130-0-30{
+    margin: 90px 0 20px;
+}
+.sub{
+    display: flex;
+    flex-direction: row;
+    
+}
+.sub-text{
+    margin-left: 15px;
+}
+.grey-text{
+    font-size: 15px;
+    color: #6B7280;
+}
+.review-carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.arrow-left{
+    margin-top: 50px;
+    height: 40px;
+    width: 40px;
+    background:none;
+    border: none;
+    transform: rotate(-90deg);
+    background-image: url(/imgs/icons/arrow.png);
+    background-size: cover;
+}
+.arrow-right{
+    margin-top: 50px;
+    height: 40px;
+    width: 40px;
+    background:none;
+    border: none;
+    transform: rotate(90deg);
+    background-image: url(/imgs/icons/arrow.png);
+    background-size: cover;
+}
+
+
+/* pre-footer */
+
+.pre-footer{
+    z-index: 0;
+    padding-top: 450px;
+    
+    background-color: #00353B;
+    height: 40vh;
+    color: #FFF;
+}
+.pre-footer-text{
+    text-align: center;
+    width: 700px;
+    margin: 30px 0 40px;
+}
+.button-wrapper{
+    width: 280px;
+    justify-content: space-between;
+}
+
+.burger-menu{
+    display: none;
+}
+/* footer */
+footer{
+    background-color: #00353B;
+    color: #FFF;
+    height: 20vh;
+    
+}
+.footer-flex-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer-wrapper{
+    justify-content: space-between;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.media-img{
+    background-color: #158E5E;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+
+
+@media (max-width: 1200px){
+    .container{
+        width: 992px;
+    }
+
+    .card{
+        height: 350px;
+        padding: 20px 20px;
+    }
+
+    .card::after{
+        height: 180px;
+        width: 140px;
+    }
+
+    .img-block{
+        background-position: center;
+    }
+    .h3-filler{
+        font-size: 40px;
+    }
+    .aboutUs-subtitle {
+        font-size: 40px;
+    }
+    .benefits-main-block{
+        height: 500px;
+    }
+    .benefits-block-wrapper{
+        margin-top: 30px;
+    }
+
+    .carousel-wrapper{
+        width: 900px;
+    }
+    .review-card{
+        padding: 20px;
+        width: 240px;
+        height: 250px;
+    }
+    .review-text {
+        font-size: 15px;
+    }
+    .grey-text{font-size: 13px;}
+    .black-text{font-size: 13px;}
+    .aboutUs-wrapper {
+        height: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        width: 767px;
+    }
+    .slogan {
+        font-size: 35px;
+    }
+    .white-button{
+        padding: 8px 15px;
+    }
+    .empty {
+        width: 79px;
+    }
+    .nav-link {
+        font-size: 14px;
+    }
+    .text-part p {
+        font-size: 15px;
+    }
+    .img-part::before {
+        content: '';
+        background-image: url(/imgs/bowls.png);
+        background-size: cover;
+        width: 120px;
+        height: 140px;
+        left: -70px;
+        top: 200px;
+    }
+    .just-link{
+        font-size: 15px;
+    }
+    .green-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .h3-filler{
+        font-size: 35px;
+    }
+    .aboutUs-subtitle {
+        font-size: 35px;
+    }
+    .p-filler{
+        font-size: 14px;
+    }
+    .filler{
+        font-size: 15px;
+    }
+    .filler-blocks {
+        margin-top: 100px;
+    }
+    .courses {
+        margin-top: 80px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .cost{
+        font-size: 15px;
+    }
+    .card {
+        height: 280px;
+        padding: 16px;
+    }
+    .card::after {
+        height: 130px;
+        width: 100px;
+    }
+    .img-block{
+        display: none;
+    }
+    .pink-block{
+        height: 400px;
+        margin-top: 120px;
+    }
+    .text-block{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 40px;
+    }
+    .benefits-main-block {
+        height: 420px;
+    }
+    .benefits-block-wrapper{
+        width: 200px;
+    }
+    .black-title{
+        font-size: 17px;
+        margin: 10px 0;
+    }
+    .mini-img-block img{
+        width: 35px;
+    }
+    .review-card {
+        padding: 14px;
+        width: 180px;
+        height: 210px;
+        border-radius: 10px;
+    }
+    .review-text{
+        font-size: 13px;
+    }
+    .avatar-img{width: 35px;}
+    .grey-text{font-size: 10px;}
+    .black-text{font-size: 10px;}
+    .test-wrapper{height: 500px;}
+    .marginer130-0-30 {margin-top: 60px;}
+    .carousel-wrapper {
+        width: 680px;
+        margin-top: 60px;
+    }
+    .aboutUs-wrapper{border-radius: 20px;}
+    .pink-container{
+        border-radius: 20px;
+    }
+    .pre-footer{padding-top: 400px;}
+    .button-wrapper {width: 240px;}
+    .pre-footer-text {margin: 20px 0 30px;}
+}
+
+ 
+@media (max-width:767px){
+    .container{
+        width: 576px;
+    }
+    .p-filler {
+        font-size: 12px;
+    }
+    .h3-filler {
+        font-size: 30px;
+    }  
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .links{
+        margin: 15px 0;
+    }
+    .nav-link{
+        margin: 0 30px;
+    }
+
+    .text-part{
+        width: 90%;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        margin-top: 35px;
+    }
+
+    .img-part{
+        display: none;
+    }
+    .header{
+        height: calc(100vh + 200px);
+    }
+
+    .text-wrapper {
+        width: 530px;
+    }
+    
+    .block-wrapper{
+        flex-direction: column;
+    }
+    .block-reverse{
+        flex-direction: column-reverse;
+    }
+    .block-img {
+        width: 55%;
+    }
+    .text-block {
+        margin: 30px 0 50px;
+    }
+
+    .block-cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    .card::after {
+        height: 226px;
+        width: 175px;
+    }
+
+    .coding-girl{
+        display: none;
+    }
+
+    .margin-box{
+        width: 530px;
+    }
+
+    .test-wrapper{
+        text-align: center;
+    }
+    .carousel-wrapper {
+        width: 490px;
+        margin-top: 40px;
+    }
+    .review-card{
+        width: 198px;
+    }
+
+
+    .arrow-right, .arrow-left {
+        height: 30px;
+        width: 30px;
+    }
+    .pre-footer-text{
+        width: 490px;
+    }
+    .media-img{
+        width: 20px;
+    }
+    
+}
+@media (max-width:575px){
+    
+
+    .burger-menu{
+        
+        width: 100%;
+        height: 100vh;
+        background-color: #FCD8CA;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s;
+        right: -100%;
+        
+    }
+    .burger-link{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        color: #4B5563;
+    }
+    .links{
+        display: none;
+    }
+    .interactive{
+        display: none;
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .empty{
+        margin-left: 20px;
+    }
+    .burger-menu-icon{
+        position: relative;
+        height: 30px;
+        width: 35px;
+        margin-right: 20px;
+        cursor: pointer;
+        z-index: 100;
+        
+    }
+    
+    .slide{
+        position: relative;
+        height: 5px;
+        background-color: white;
+        width: 35px;
+        margin: 4px 0;
+        border-radius: 3px;
+        transition: all 0.5s;
+    }
+    .background-color-grey{
+        background-color:#4B5563 ;
+    }
+    .container {
+        width: 100%;
+    }
+    .h3-filler {
+        font-size: 25px;
+        text-align: center;
+    }
+    .filler {
+        font-size: 12px;
+    }
+    .aboutUs-subtitle {
+        font-size: 25px;
+    }
+
+    .text-wrapper {
+        width: 360px;
+    }
+    .margin-box {
+        width: 360px;
+    }
+    .testimonials{
+        margin-top: 40px;
+    }
+    .benefits-block-wrapper{
+        width: 180px;
+    }
+    .carousel-wrapper {
+        width: 310px;
+        margin-top: 30px;
+    }
+    .review-card {
+        width: 263px;
+    }
+    .pre-footer-text{
+        width: 310px;
+    }
+    .pre-footer-text, .rights{
+        font-size: 13px;
+    }
+    .pre-footer{height: 30vh;}
+    .media-img {
+        background-color: #158E5E;
+        border-radius: 4px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+
+}
